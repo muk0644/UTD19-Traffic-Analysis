@@ -1,6 +1,10 @@
 # Data files (too large - users download from ETH Zurich)
-data/
-*.csv
+data/*.csv
+data/data_london.csv
+data/detectors_public.csv
+data/links.csv
+data/mean_detectors.csv
+data/traffic.csv
 
 # Python
 __pycache__/
