@@ -192,6 +192,22 @@ Download from: [https://utd19.ethz.ch/](https://utd19.ethz.ch/)
 jupyter notebook traffic_analysis.ipynb
 ```
 
+### Using the Utility Module
+
+The `traffic_utils.py` module provides reusable functions:
+
+```python
+from traffic_utils import load_and_filter_detectors, apply_kmeans_clustering
+
+# Load London detectors
+detectors = load_and_filter_detectors('data/detectors_public.csv', 'london')
+
+# Apply K-Means clustering
+kmeans, labels, centroids = apply_kmeans_clustering(stats_data, n_clusters=7)
+```
+
+See [traffic_utils.py](traffic_utils.py) for complete documentation of all functions.
+
 ## Usage
 
 Execute the notebook cells sequentially from top to bottom:
@@ -266,6 +282,7 @@ The analysis generates:
 UTD19-Traffic-Analysis/
 ├── README.md                          # Project documentation (this file)
 ├── traffic_analysis.ipynb             # Main analysis notebook (48 cells)
+├── traffic_utils.py                   # Reusable utility functions
 ├── requirements.txt                   # Python dependencies
 ├── LICENSE                            # MIT License
 ├── CONTRIBUTING.md                    # Contribution guidelines
@@ -275,10 +292,17 @@ UTD19-Traffic-Analysis/
     └── .gitkeep                       # Keeps folder structure in Git
 ```
 
-### Notes:
+### File Descriptions:
+- **`traffic_analysis.ipynb`**: Main analysis notebook with visualizations and results
+- **`traffic_utils.py`**: Reusable Python module with utility functions:
+  - `load_and_filter_detectors()` - Load detector metadata
+  - `find_nearest_detectors()` - Find nearest neighbors
+  - `compute_detector_statistics()` - Calculate traffic statistics
+  - `apply_kmeans_clustering()` - K-Means analysis
+  - `plot_detector_map()` - Create interactive maps
+  - `plot_clusters()` - Visualize clustering results
 - **`data/` folder**: Empty in repository. Users download files from [https://utd19.ethz.ch/](https://utd19.ethz.ch/) and place them here
-- **Relative paths**: All notebook paths use `data/filename.csv` format (portable across systems)
-- **No data in Git**: Large files (2.3 GB+) are ignored for GitHub compatibility
+- **Relative paths**: All paths use `data/filename.csv` format (portable across systems)
 
 ## Technical Highlights
 
