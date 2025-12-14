@@ -270,13 +270,15 @@ UTD19-Traffic-Analysis/
 ├── LICENSE                            # MIT License
 ├── CONTRIBUTING.md                    # Contribution guidelines
 ├── .gitignore                         # Git ignore rules
-└── data/                             # Dataset files (download from ETH Zurich)
-    ├── detectors_public.csv          # Detector metadata (~2000 detectors)
-    ├── data_london.csv               # Raw measurements (large file, ~100MB+)
-    ├── mean_detectors.csv            # Pre-computed statistics (100 detectors)
-    ├── traffic.csv                   # Additional traffic data
-    └── links.csv                     # Road network topology
+└── data/                              # Dataset folder (download from ETH Zurich)
+    ├── README.md                      # Data setup instructions
+    └── .gitkeep                       # Keeps folder structure in Git
 ```
+
+### Notes:
+- **`data/` folder**: Empty in repository. Users download files from [https://utd19.ethz.ch/](https://utd19.ethz.ch/) and place them here
+- **Relative paths**: All notebook paths use `data/filename.csv` format (portable across systems)
+- **No data in Git**: Large files (2.3 GB+) are ignored for GitHub compatibility
 
 ## Technical Highlights
 
