@@ -194,7 +194,17 @@ jupyter notebook traffic_analysis.ipynb
 
 ### Using the Utility Module
 
-The `traffic_utils.py` module provides reusable functions:
+**Note:** The `traffic_utils.py` module is **OPTIONAL**. The entire analysis can be completed using only `traffic_analysis.ipynb`. 
+
+The utility module exists to demonstrate:
+- **Software engineering practices**: Modular, reusable code structure
+- **Professional Python development**: Type hints, docstrings, error handling
+- **Code reusability**: Functions can be imported and used in other projects
+- **Testability**: Unit tests can be written for isolated functions
+
+If you prefer to work entirely within the notebook, simply run `traffic_analysis.ipynb` - no additional dependencies or modules needed.
+
+If you want to use the utility functions:
 
 ```python
 from traffic_utils import load_and_filter_detectors, apply_kmeans_clustering

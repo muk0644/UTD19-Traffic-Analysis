@@ -1,15 +1,31 @@
 """
 Urban Traffic Analysis Utilities
 
-This module provides utility functions for analyzing urban traffic data
+This module provides reusable utility functions for analyzing urban traffic data
 from the UTD19 Multi-City Traffic Detector Dataset (ETH Zurich).
 
+PURPOSE:
+--------
+- Code reusability: Extract common operations into importable functions
+- Software engineering best practices: Modular, tested, documented code
+- Portfolio demonstration: Shows professional Python development skills
+- Future scalability: Easy to extend and test without modifying notebooks
+
+OPTIONAL NOTE:
+--------------
+This module is OPTIONAL. The main analysis can be done entirely within
+traffic_analysis.ipynb without using these utilities. However, using this
+module demonstrates better software engineering practices and makes code
+more maintainable and reusable for future projects.
+
 Functions:
-    - load_and_filter_detectors(): Load detector metadata and filter by city
-    - find_nearest_detectors(): Find N nearest detectors by distance
-    - compute_detector_statistics(): Compute mean occupancy and flow
-    - apply_kmeans_clustering(): Apply K-Means clustering to traffic data
-    - plot_detector_map(): Visualize detectors on interactive Folium map
+    - load_and_filter_detectors(): Load and filter detector metadata by city
+    - find_nearest_detectors(): Find N nearest detectors using Euclidean distance
+    - compute_detector_statistics(): Calculate mean occupancy and flow statistics
+    - apply_kmeans_clustering(): Apply K-Means clustering with configuration
+    - elbow_method(): Determine optimal number of clusters
+    - plot_detector_map(): Create interactive Folium map visualization
+    - plot_clusters(): Visualize K-Means clustering results
 """
 
 import pandas as pd
