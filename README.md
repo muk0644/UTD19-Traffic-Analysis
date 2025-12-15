@@ -404,8 +404,7 @@ This project showcases proficiency in:
 - **ETH Zurich** - For providing the UTD19 dataset ([https://utd19.ethz.ch/](https://utd19.ethz.ch/))
 - **Open Source Community** - For the excellent libraries: Pandas, PyTorch, Folium, Scikit-learn, Plotly, Matplotlib
 
-**Course Acknowledgment:**
-This project was completed as part of the "Data Science and AI in Intelligent and Sustainable Mobility Systems" course at Technische Hochschule Ingolstadt under the supervision of Prof. Dr. Stefanie Schmidtner.
+- **Course:** This project was completed as part of the "Data Science and AI in Intelligent and Sustainable Mobility Systems" course at Technische Hochschule Ingolstadt under the supervision of Prof. Dr. Stefanie Schmidtner.
 
 ## License
 
@@ -417,4 +416,3 @@ Star this repository if you found it helpful!
 Fork it to create your own traffic analysis project!  
 Issues and PRs are welcome!
 
-**Happy Traffic Analysis!**
