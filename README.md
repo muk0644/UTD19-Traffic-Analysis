@@ -399,12 +399,12 @@ This project showcases proficiency in:
 - **Reproducibility**: Relative paths, requirements.txt, clear documentation
 - **Project Organization**: Logical file structure and naming conventions
 
-## Acknowledgements
+## Acknowledgments
 
 - **ETH Zurich** - For providing the UTD19 dataset ([https://utd19.ethz.ch/](https://utd19.ethz.ch/))
 - **Open Source Community** - For the excellent libraries: Pandas, PyTorch, Folium, Scikit-learn, Plotly, Matplotlib
 
-- **Acknowledgements:** This project was completed as part of the "Data Science and AI in Intelligent and Sustainable Mobility Systems" course at Technische Hochschule Ingolstadt under the supervision of Prof. Dr. Stefanie Schmidtner.
+- **Acknowledgments:** This project was completed as part of the "Data Science and AI in Intelligent and Sustainable Mobility Systems" course at Technische Hochschule Ingolstadt under the supervision of Prof. Dr. Stefanie Schmidtner.
 
 ## License
 
